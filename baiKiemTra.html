@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài kiểm tra</title>
+</head>
+<body>
+<h2>Câu 1:</h2>
+<p>Câu lệnh hiện thị 1 hộp thoại là alert()</p>
+<p>Cú pháp tên bạn hiển thị lên hộp thoại</p>
+<p>alert('Nhung')</p>
+<h2>Câu 2</h2>
+<p>Câu lệnh để nhận 1 giá trị từ 1 hộp thoại là: prompt()</p>
+<script>
+   a =+prompt("nhập một số");
+   alert(a*a);
+</script>
+<h2>Cau 3</h2>
+<p>Nhap a</p>
+<input id="a" type="text">
+<p>Nhap b</p>
+<input id="b" type="text">
+<button onclick="check()">Kiem Tra</button>
+<h1 id="kQ"></h1>
+
+<script>
+
+    function check() {
+       let soA = parseInt(document.getElementById("a"));
+      let soB = parseInt(document.getElementById("b"));
+        document.getElementById("kQ").innerHTML= "S=" + soA*soB ;
+    }
+
+</script>
+<h2>Cau 4.a</h2>
+<p>nhap a</p>
+<input id="a "type="text">
+<p id="ketQ"></p>
+<script>
+    canh= parseInt(document.getElementById("a"));
+    document.getElementById("ketQ").innerHTML= "Chu vi hinh vuong:" + 4*canh;
+    document.getElementById("ketQ").innerHTML= "dien tich hinh vuong:" + canh*canh;
+</script>
+<h3>Cau 4.b</h3>
+<script>
+   a= +prompt("Nhap so a");
+    alert(a*a);
+    b= +prompt("nhap so b");
+    alert(b*b);
+</script>
+<h3>Cau4.c</h3>
+<script>
+    a= +prompt("nhap so a");
+    b= +prompt("nhap so b");
+    let c=a-b;
+    let tong=0;
+    let d= b-a;
+    let tong1=0;
+    if(c>0){
+        for(i=1; i<=c;i++){
+            tong=tong+a;
+            a=a+1;
+        }
+        document.write(tong);
+    }else if(d>0){
+        for(i=1;j<=d;j++){
+           tong1= tong1+b;
+           b=b+1;
+        }
+        document.write(tong1);
+    }
+</script>
+
+</body>
+</html>
